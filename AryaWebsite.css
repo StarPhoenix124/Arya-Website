@@ -1,0 +1,274 @@
+/* General Page Styles */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Navigation Buttons Style */
+.header {
+  background-color: #5b0e2d;
+  padding: 20px;
+  position: relative;
+}
+
+.name-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.name {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3em;
+  color: #ffd700;
+  margin: 0;
+}
+
+.nav-buttons {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.nav-buttons button {
+  background-color: #ffd700;
+  border: none;
+  color: #5b0e2d;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 20px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background-color: #ffcc33;
+}
+
+/* Social Links Styles */
+.social-links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links img {
+  width: 30px;  /* Adjusted size */
+  height: 30px; /* Keep them square */
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+/* About Section Styles */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  margin: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.about-left {
+  width: 60%;
+}
+
+.about-left h2 {
+  color: #ffd700;
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
+}
+
+.about-left p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.about-right {
+  width: 35%;
+  text-align: center;
+}
+
+/* About Section Styles */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  margin: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.about-left {
+  width: 60%;
+}
+
+.about-left h2 {
+  color: #ffd700;
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
+}
+
+.about-left p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.about-right {
+  width: 35%;
+  text-align: center;
+}
+/* Styling the Contact Page for Improved Layout */
+.contact-section {
+  background-color: #1c1c1c; /* Matching the dark background */
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 700px; /* Center and limit the width */
+  color: #ffffff; /* Text color to match theme */
+}
+
+.contact-section h2 {
+  font-family: 'Fredoka One', cursive;
+  color: #ffd700; /* Same color as "About Me" */
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Stacking items vertically */
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffd700; /* Golden border for theme consistency */
+  border-radius: 10px;
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+.contact-form button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #ffd700; /* Consistent button color */
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #1c1c1c;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #e5c100; /* Slightly darker on hover */
+}
+
+body {
+  background-color: #1b1b1b; /* Dark background */
+  color: #ffffff; /* White text for readability */
+  font-family: 'Roboto', sans-serif; /* More readable font */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #333333; /* Dark grey container for contrast */
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative; /* Relative positioning for child elements */
+}
+
+h2 {
+  color: #ffcc00; /* Yellow color for headings */
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Increased gap for better readability */
+}
+
+.question {
+  font-size: 20px; /* Larger text for questions */
+  color: #ffffff;
+  line-height: 1.5; /* Space between lines for readability */
+}
+
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap between answer options */
+}
+
+.answer-option {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.submit-button {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  color: #000000; /* Black text */
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #ffaa00; /* Slightly darker yellow for hover effect */
+  transform: scale(1.05);
+}
+
+/* Styles for the quiz result */
+.result {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px; /* Larger font for the result */
+  color: #ffcc00; /* Yellow color for visibility */
+  text-align: right;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/AryaWebsite.css">
+    <title>The Finale Quiz - Arya Jain</title>
+</head>
+<body>
+    <div class="header">
+        <div class="name-container">
+            <h1 class="name">ARYA JAIN</h1>
+        </div>
+    </div>
+
+    <div class="quiz-section">
+        <h2>The Finale Quiz</h2>
+        <p>Let's see how compatible we are! Answer these quick questions:</p>
+
+        <form id="quiz-form">
+            <div class="question">
+                <label>1. What's your favorite design style?</label><br>
+                <input type="radio" name="question1" value="Minimalist"> Minimalist<br>
+                <input type="radio" name="question1" value="Colorful"> Colorful<br>
+                <input type="radio" name="question1" value="Vintage"> Vintage<br>
+                <input type="radio" name="question1" value="Modern"> Modern<br>
+            </div>
+
+            <div class="question">
+                <label>2. Do you prefer working in the morning or at night?</label><br>
+                <input type="radio" name="question2" value="Morning"> Morning<br>
+                <input type="radio" name="question2" value="Night"> Night<br>
+            </div>
+
+            <div class="question">
+                <label>3. What's your go-to beverage while working?</label><br>
+                <input type="radio" name="question3" value="Coffee"> Coffee<br>
+                <input type="radio" name="question3" value="Tea"> Tea<br>
+                <input type="radio" name="question3" value="Water"> Water<br>
+                <input type="radio" name="question3" value="Juice"> Juice<br>
+            </div>
+
+            <div class="question">
+                <label>4. How do you handle tight deadlines?</label><br>
+                <input type="radio" name="question4" value="Stress"> Stress out<br>
+                <input type="radio" name="question4" value="Stay Calm"> Stay calm and plan<br>
+                <input type="radio" name="question4" value="Procrastinate"> Procrastinate and then rush<br>
+                <input type="radio" name="question4" value="Excited"> Feel excited and focused<br>
+            </div>
+
+            <button type="button" onclick="calculateCompatibility()">Submit Answers</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateCompatibility() {
+            // Simple logic to generate a random percentage result
+            const compatibility = Math.floor(Math.random() * 5) * 20 + 10; // Random percentages: 10, 30, 50, 70, 90, 100
+            const resultText = compatibility + "% compatible!";
+
+            let message;
+            if (compatibility <= 30) {
+                message = "Oh no! We might have a rocky start, but differences make things interesting!";
+            } else if (compatibility <= 70) {
+                message = "We seem to have quite a few things in common! Great start!";
+            } else {
+                message = "Wow! We're a perfect match! Let's get creative together!";
+            }
+
+            document.getElementById("result").innerHTML = `<h3>${resultText}</h3><p>${message}</p>`;
+        }
+    </script>
+</body>
+</html>
